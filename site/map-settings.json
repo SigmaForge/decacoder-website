@@ -1,0 +1,11 @@
+{
+	"mapZoom": 15,
+	"markerAddress": "Eagle Labs, Chesterton, Cambridge",
+	"markerImagePath": "./assets/img/marker-21x32.png",
+	"offsetX": 100,
+	"offsetY": 10,
+	"markerLatLng": [
+		52.214020,
+		0.125064
+	]
+}
