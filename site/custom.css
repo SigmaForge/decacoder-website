@@ -55,7 +55,7 @@
 .workshop-description {
   background-color: white;
   padding: 16px 32px;
-  /*margin-bottom: 45px;*/
+  font-size:large;
 }
 
 .nav.nav-schedule li.active {
