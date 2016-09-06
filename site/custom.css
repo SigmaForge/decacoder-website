@@ -1,7 +1,10 @@
 .custom-header {
-  background-color: #2b3643!important
+  background-color: #2b3643!important;
 }
 
+.custom-speaker{
+  min-height: 900px;
+}
 .package-column .package-price{
   font-size: 30px;
 }
