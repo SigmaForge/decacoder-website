@@ -2451,7 +2451,7 @@ li {
 }
 .section {
   position: relative;
-  padding-top: 90px;
+  padding-top: 50px;
 }
 .fullwidth-section {
   zoom: 1;
@@ -3221,7 +3221,7 @@ button.btn.btn-block {
     Schedules
 ---------------------------------------------------------------------------- */
 .schedule {
-  margin-bottom: 50px;
+  /*margin-bottom: 50px;*/
   text-align: left;
   background-color: #ffffff;
 }
