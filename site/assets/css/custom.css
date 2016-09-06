@@ -1,0 +1,25 @@
+.custom-header {
+  background-color: #2b3643!important
+}
+
+.package-column .package-price{
+  font-size: 30px;
+}
+/*.package-column.special-column{
+  min-height: 480px;
+}*/
+.bottomaligned {
+  position:absolute;
+  bottom:5%; left: 10%;}
+
+.package-column{
+  min-height: 480px;
+}
+
+.section {
+  padding: 90px;
+}
+
+.footer{
+  background-color: #2b3643
+}
