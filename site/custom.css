@@ -16,10 +16,61 @@
   min-height: 480px;
 }
 
-.section {
-  padding: 90px;
-}
 
 .footer{
-  background-color: #2b3643
+  background-color: #2b3643;
+}
+
+.decacoder{
+  font-family: PFDinStencil-Thin, Arial, Helvetica, san-serif;
+  font-weight: normal;
+  font-size: 26px;
+}
+.footer-about{
+  padding-bottom:30px;
+}
+.footer{
+  margin-top:50px
+}
+
+#dropShadow {
+  height: 6px;
+  bottom: -6px;
+  box-shadow: inset 0px 5px 6px -3px rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 78px;
+  left: 0;
+  right: 0;
+  height: 6px;
+  pointer-events: none;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  opacity: 1;
+  z-index: 998;
+}
+
+.workshop-book {
+  margin:32px;
+}
+.workshop-description {
+  background-color: white;
+  padding: 16px 32px;
+  margin-bottom: 45px;
+}
+
+.nav.nav-schedule li.active {
+  background: #5F7895;
+}
+.tickets-section .workshop-description {
+  background: #DCE1E5;
+}
+
+section.tickets-section {
+  padding: 0;
+}
+.nav.nav-schedule li a {
+  padding: 15px;
+}
+.no-pad {
+  padding: 0;
 }

@@ -1967,6 +1967,10 @@ body {
   color: #51545b;
   line-height: 1.5625;
   background: #ECEFF1;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .thin {
   font-weight: 300;
@@ -1994,7 +1998,7 @@ h2 {
 }
 h3 {
   font-size: 50px;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.02em;
 }
 h4 {
   font-size: 40px;
@@ -2025,7 +2029,7 @@ h5,
 h6,
 .h7 {
   font-family: "Roboto", "Helvetica Neue", Arial, Helvetica, sans-serif;
-  font-weight: 700;
+  font-weight: normal;
 }
 h1,
 h2,
@@ -2036,7 +2040,7 @@ h5 {
 h3,
 .h8 {
   font-family: "Roboto", "Helvetica Neue", Arial, Helvetica, sans-serif;
-  font-weight: 400;
+  font-weight: 300;
 }
 h1,
 h2,
@@ -2047,7 +2051,7 @@ h5 {
 h3,
 h6,
 .h7 {
-  color: #262627;
+  color: #1C1D21;
 }
 .h8 {
   color: #8d93a0;
@@ -2057,7 +2061,7 @@ h5.heading-alt {
   font-size: 19px;
   line-height: 1.7;
   letter-spacing: 0.5em;
-  color: #262627;
+  color: #1C1D21;
 }
 h6.heading-alt {
   font-size: 15px;
@@ -2080,7 +2084,7 @@ h2 {
 p,
 article {
   margin: 0 0 10px;
-  line-height: 29px;
+  line-height: 24px;
 }
 p.small,
 article.small {
@@ -2095,11 +2099,10 @@ strong {
 }
 small {
   display: inline-block;
-  font-size: 13px;
 }
 .text-alt,
 .counter-box .counter-content .title {
-  color: #B8BCC3;
+  color: #A8B6C7;
 }
 a {
   -webkit-transition: color 0.2s ease;
@@ -2157,6 +2160,7 @@ span {
 .footer .h7,
 .footer .h8 {
   color: inherit;
+  font-weight: normal;
 }
 .light-text h1.heading-alt,
 .light-text h2.heading-alt,
@@ -2299,7 +2303,7 @@ input[type=password].error,
 .header .buy-btn:active,
 .header .buy-btn.hovered,
 .header .buy-btn.pressed {
-  border-color: #39c8b7;
+  border-color: #5F7895;
 }
 .base-clr-bg,
 .overlay.overlay-clr:before,
@@ -2337,7 +2341,7 @@ input[type=password].error,
 .call-to-action-section > .overlay:before,
 .thumb-wrapper .overlay:before,
 .header .buy-btn {
-  background-color: #39c8b7;
+  background-color: #FE5F55;
 }
 .base-clr-txt,
 .highlight,
@@ -2447,7 +2451,7 @@ li {
 }
 .section {
   position: relative;
-  padding: 90px 0;
+  padding-top: 90px;
 }
 .fullwidth-section {
   zoom: 1;
@@ -2530,7 +2534,7 @@ li {
   left: 0;
   bottom: 0;
   content: "";
-  background-color: #262627;
+  background-color: #1C1D21;
   z-index: -1;
 }
 .overlay.overlay-clr:before,
@@ -2965,15 +2969,15 @@ lesshat-selector {
   max-width: 100%;
   padding: 21px 25px 19px;
   font-family: "Roboto", "Helvetica Neue", Arial, Helvetica, sans-serif;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   line-height: 1;
-  letter-spacing: 0.59em;
+  letter-spacing: 0.05em;
   border: none;
-  border-radius: 4px;
+  border-radius: 2px;
   overflow: hidden;
 }
 .btn:not(.btn-outline-clr):not(.btn-white):not(.btn-outline) {
@@ -3351,7 +3355,7 @@ button.btn.btn-block {
 .schedule .tab-content-schedule {
   position: relative;
   border: none;
-  padding: 90px 100px 80px 80px;
+  padding: 60px 100px 90px 80px;
 }
 .schedule .tab-content-schedule:before {
   position: absolute;
@@ -3480,7 +3484,7 @@ button.btn.btn-block {
   font-family: "Roboto", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  color: #262627;
+  color: #1C1D21;
 }
 .schedule.schedule-light .nav.nav-schedule {
   border-style: solid;
@@ -4213,7 +4217,7 @@ button.btn.btn-block {
   border: 1px solid transparent;
 }
 .panel-group-alt .panel > a.collapsed {
-  color: #262627;
+  color: #1C1D21;
   border-color: #eff1f5;
 }
 .panel-group-alt .panel > a:not(.collapsed) {
@@ -4859,7 +4863,7 @@ button[type="submit"] .loading {
   font-family: "Roboto", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: 700;
   line-height: 1;
-  color: #262627;
+  color: #1C1D21;
 }
 .package-column .package-price .currency {
   font-size: 45px;
@@ -5482,7 +5486,7 @@ button[type="submit"] .loading {
   .gallery.light-slider .img-slider-wrapper .img-slider {
     height: 400px !important;
     min-height: 0 !important;
-    background-color: #262627;
+    background-color: #1C1D21;
   }
   .gallery.light-slider .img-slider-wrapper .img-slider > li {
     -webkit-background-size: contain;
@@ -5532,33 +5536,48 @@ button[type="submit"] .loading {
 ---------------------------------------------------------------------------- */
 .speaker {
   margin-bottom: 40px;
-  text-align: center;
+  background: #ffffff;
+  padding: 32px 32px 16px 32px;
+  min-height: 300px;
 }
 .speaker .photo-wrapper {
   margin: 0 auto 20px;
-  display: inline-block;
+  display: table;
   max-width: 100%;
+}
+.workshop-photo-wrapper {
+  width: 100%;
+  padding-bottom: 56.25%;
+  background:gold;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .speaker .photo-wrapper.rounded {
   border-radius: 50%;
   overflow: hidden;
 }
 .speaker .photo-wrapper img {
-  display: block;
+  display: table-cell;
   max-width: 100%;
+  vertical-align: middle;
 }
 .speaker .name {
-  font-size: 13px;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 14px;
-  letter-spacing: 0.3em;
+  font-size: 23px;
+  font-weight: 400;
+  text-transform: none;
+  line-height: 23px;
+  letter-spacing: 0.01em;
+  color: #1C1D21;
 }
 .speaker .name + p small {
-  font-size: 14px;
+  font-size: 16px;
 }
 .speaker .about {
-  padding: 0 15px;
+  padding-bottom: 16px;
 }
 .speaker .speaker-socials > li {
   padding: 0 10px;
@@ -6063,7 +6082,7 @@ button[type="submit"] .loading {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  background-color: #262627;
+  background-color: #1C1D21;
 }
 .header.header-black .navigation-link {
   color: #ffffff;
@@ -6072,7 +6091,7 @@ button[type="submit"] .loading {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  background-color: #262627;
+  background-color: #1C1D21;
 }
 .header.header-color .header-wrapper {
   -webkit-box-shadow: none;
@@ -6104,14 +6123,14 @@ button[type="submit"] .loading {
   display: none;
 }
 .header .buy-btn {
-  margin: 29px 0 0;
+  margin: 18px 0 0;
 }
 .header-wrapper {
   -webkit-box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.18);
   -moz-box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.18);
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.18);
   zoom: 1;
-  height: 74px;
+  height: 78px;
   padding: 0 0;
   background-color: #ffffff;
 }
@@ -6126,7 +6145,7 @@ button[type="submit"] .loading {
 .navigation-header {
   zoom: 1;
   display: inline-block;
-  padding: 29px 0 0;
+  padding: 12px 0 0;
 }
 .navigation-header:before,
 .navigation-header:after {
@@ -6139,11 +6158,12 @@ button[type="submit"] .loading {
 .navigation-header .logo {
   display: inline-block;
   padding: 3px 0;
-  font-family: "Roboto", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: PFDinStencil-Thin, Arial, Helvetica, sans-serif;
   font-size: 23px;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-weight: normal;
+  text-transform: none;
   text-decoration: none;
+  font-size: 39px;
 }
 .navigation-header .buy-btn {
   margin: 9px 0 0;
@@ -6166,9 +6186,10 @@ button[type="submit"] .loading {
   text-align: left;
 }
 .navigation-item {
+  margin: 0;
   margin-left: 21px;
   display: inline-block;
-  padding: 22px 0 16px;
+  padding: 24px 0 16px;
 }
 .navigation-item:first-child {
   margin-left: 0;
@@ -6226,7 +6247,7 @@ button[type="submit"] .loading {
 .dropdown-menu .navigation-link {
   padding: 15px 40px;
   font-weight: 700;
-  color: #262627;
+  color: #1C1D21;
   border: none;
 }
 .dropdown-menu .navigation-link:hover,
@@ -6245,8 +6266,8 @@ button[type="submit"] .loading {
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.26em;
-  color: #262627;
+  letter-spacing: 0.16em;
+  color: #1C1D21;
   border-style: solid;
   border-width: 0 0 2px;
   border-color: transparent;
@@ -6449,7 +6470,7 @@ button[type="submit"] .loading {
     border: none;
   }
   .navigation-link:not(.active):not(:hover):not(:focus):not(:active) {
-    color: #262627;
+    color: #1C1D21;
   }
 }
 @media (max-width: 480px) {
@@ -6463,11 +6484,11 @@ button[type="submit"] .loading {
 .footer {
   padding: 50px 0 0;
   color: #ffffff;
-  background-color: #262627;
+  background-color: #1C1D21;
 }
 .footer-base {
   padding: 40px 0 30px;
-  background-color: #1f2125;
+  background-color: #202832;
   text-align: left;
 }
 .footer-nav > li {
@@ -6813,7 +6834,7 @@ button[type="submit"] .loading {
 	opacity: 0.85;
 }
 .bg5.overlay:before {
-  background-color: #262627;
+  background-color: #1C1D21;
   opacity: 0.7;
 }
 .bg5 {
