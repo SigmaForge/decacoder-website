@@ -1,0 +1,30 @@
+{
+  "name": "decacoder-website.git",
+  "version": "1.0.0",
+  "description": "Decacoder Website =================",
+  "main": "",
+  "scripts": {
+    "test": "",
+    "build": "node ./node_modules/static-react/bin/static-react.js src/Home.react.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SigmaForge/decacoder-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SigmaForge/decacoder-website/issues"
+  },
+  "homepage": "https://github.com/SigmaForge/decacoder-website#readme",
+  "dependencies": {
+    "highlight.js": "^9.6.0",
+    "markdown-it": "^7.0.1",
+    "static-react": "^3.2.0",
+    "uuid": "^2.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-preset-react": "^6.11.1"
+  }
+}
