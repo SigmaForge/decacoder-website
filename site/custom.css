@@ -77,3 +77,35 @@ section.tickets-section {
 .no-pad {
   padding: 0;
 }
+.white{
+  color:white;
+}
+
+.herobox{
+  margin-bottom: 140px;
+  width:100%;
+  padding-top:250px;
+  background-image: url('resources/heropic.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  position:relative;
+}
+.herobox .img-contain{
+  position: absolute;
+  bottom:0px;
+  left:50%;
+}
+.herobox-logo{
+  position:relative;
+  bottom:-120px;
+  left:-50%;
+  width:300px;
+  border-radius:50%;
+  -webkit-box-shadow: 0px 3px 10px -1px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 3px 10px -1px rgba(0,0,0,1);
+  box-shadow: 0px 3px 10px -1px rgba(0,0,0,1);
+}
+h3 {
+  margin-top:0.5em;
+}
