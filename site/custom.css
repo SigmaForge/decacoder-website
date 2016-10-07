@@ -311,6 +311,10 @@ h6.widget-head {
   margin-bottom: -0.02em;
 }
 
+.speaker img.img-responsive{
+  width:100%;
+}
+
 /*Small tablets and up*/
 
 @media (min-width: 480px) {
