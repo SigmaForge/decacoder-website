@@ -1,15 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-
 	<meta charset="utf-8">
 	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-	<title>Home</title>
-
-	<meta name="description" content="PSD to HTML5+CSS3 conversion.">
-	<meta name="keywords" content="PSD, HTML5, CSS3">
-	<meta name="author" content="Vivaco">
+	<title>DecaCoder</title>
+  <meta name="description" content="Become a better programmer with high-quality online courses and interactive exercises." />
+  <meta name="keywords" content="programming, courses, F#, FSharp, coding, software craftsmanship" />
 
 	<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.jpg">
 	<link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.jpg">
@@ -18,6 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/custom-animations.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/style-green-color.css" />
 	<link rel="stylesheet" type="text/css" href="custom.css" />
+  <link href="/learn/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 
 	<!--[if lt IE 9]>
 		<script src="assets/js/html5shiv.js"></script>
@@ -30,8 +28,8 @@
 		<div class="header-wrapper custom-header">
 			<div class="container">
 				<div class="col-sm-2 col-xs-12 navigation-header">
-					<a href="#" class="logo">
-						<img src="resources/Decacoder.png" alt="Logo"></img>
+					<a href="/index.html" class="logo">
+						<img src="resources/decacoder-logo.png" alt="Logo"></img>
 					</a>
 					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-controls="navigation">
 						<span class="icon-bar"></span>
@@ -40,14 +38,15 @@
 					</button>
 				</div>
 
-				<div class="col-sm-10 col-xs-12 navigation-container">
+        <div class="col-sm-10 col-xs-12 navigation-container">
 					<div id="navigation" class="navbar-collapse collapse">
-						<ul class="navigation-list pull-right light-text">
-
-							<li class="navigation-item"><a href="#products" class="navigation-link">Products</a></li>
-							<li class="navigation-item"><a href="#contact" class="navigation-link">Contact Us</a></li>
-							<li class="navigation-item"><a href="#about" class="navigation-link">About</a></li>
+						<ul class="navigation-list pull-left light-text">
+							<li class="navigation-item"><a href="/learn/" class="navigation-link">Courses</a></li>
+							<li class="navigation-item"><a href="/workshops/" class="navigation-link">Workshops</a></li>
+							<!-- <li class="navigation-item"><a href="/about/" class="navigation-link">About</a></li> -->
+							<li class="navigation-item"><a href="/contact/" class="navigation-link">Contact Us</a></li>
 						</ul>
+            <a href="/login/" class="pull-right buy-btn">Sign In</a>
 					</div>
 				</div>
 			</div>
@@ -63,8 +62,8 @@
 						<h3>We make programmers x10 better</h3>
 						<p> Start Learning now </p>
 						<div class="cta-buttons">
-							<button class="btn btn-md"> View courses</button>
-							<button class="btn btn-md"> View workshops</button>
+							<a href="/learn/" class="btn btn-md"> Online Courses</a>
+							<a href="/workshops/" class="btn btn-md"> Workshops </a>
 						</div>
 					</div>
 				</div>
@@ -74,20 +73,20 @@
 		<div class="container">
 			<div class="row">
 				<div id="courses" class="col-sm-6">
-					<div class="course-bg">
+					<div class="course-bg box-shadow-bg">
 						<h4>Courses</h4>
 						<div class="description">
-							<p>Learn to clean up messy data, uncover patterns and insights, make predictions using machine learning, and clearly communicate critical findings. Enhance your skillset and boost your hireability through innovative, independent learning.</p>
-							<a href="courses" class="btn btn-md">View Courses</a>
+							<p>Grow your skills and become a better developer online with our interactive courses. We cover topics in computer science, deliberate professional practice, and how to deliver value beyond the code. You'll also have access to expert professionals who can help you when you get stuck. Become a decacoder online now!</p>
+							<a href="/learn/" class="btn btn-md">View Courses</a>
 						</div>
 					</div>
 				</div>
 				<div id="workshops" class="col-sm-6">
-					<div class="workshop-bg">
+					<div class="workshop-bg box-shadow-bg">
 						<h4>Workshops</h4>
 						<div class="description">
-							<p>Learn to clean up messy data, uncover patterns and insights, make predictions using machine learning, and clearly communicate critical findings. Enhance your skillset and boost your hireability through innovative, independent learning.</p>
-							<a href="workshops" class="btn btn-md">View Workshops</a>
+							<p>Nothing beats learning from an expert in person. We offer a selection of workshops designed to improve your practice and make you a better developer. We also cover some of the most important areas of teamwork and management, with an emphasis on how to deliver more value to your business and your customers. </p>
+							<a href="/workshops/" class="btn btn-md">View Workshops</a>
 						</div>
 					</div>
 				</div>
@@ -95,44 +94,19 @@
 		</div>
 	</section>
 
-	<section id="team" class="who-are-we">
+	<section class="who-are-we">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8">
-						<h3>We are <img class="embed-logo" src="resources/Decacoder.png" alt="Logo"></img></h3>
+				<div class="col-md-7">
+						<h3>We are&nbsp;<img class="embed-logo" src="resources/decacoder-logo.png" alt="Logo"></img></h3>
 						<p class="about-us">
-							Learn to clean up messy data, uncover patterns and insights, make predictions using machine learning, and clearly communicate critical findings. Enhance your skillset and boost your hireability through innovative, independent learning.
+							We make programmers and developers ten times more productive by sharing the best techniques, tools and mindset to add value to the work they do. Become a Decacoder with our courses and make yourself invaluable for your company or clients.
 						</p>
 						<p>Get in touch with us at <a href="mailto:hello@decacoder.com">hello@decacoder.com</a></p>
 					</div>
 			</div>
 		</div>
 	</section>
-
-	<!-- <section id="contact" class="section">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-						<h3>Contact Us</h3>
-							<p class="text-alt">Contact us for more information</p>
-							<script type="text/javascript" src="https://form.jotformeu.com/jsform/62623787544364"></script>
-					</div>
-			</div>
-		</div>
-	</section> -->
-
-	<!-- <section class="footer" id="about">
-		<div class="container footer-about">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="widget about-widget"> -->
-						<!-- <h6 class="widget-head">About <span class="highlight decacoder">Deca<span class="white">Coder</span></span></h6>
-						<p class="text-alt"><small>Decacoder</small></p> -->
-						<!-- <p>Get in touch with us at <a href="mailto:hello@decacoder.com">hello@decacoder.com</a></p>
-					</div>
-				</div>
-			</div>
-		</div> -->
 
     <div class="footer-base">
       <div class="container">
@@ -145,6 +119,16 @@
 								416 City Road, Sheffield S2 1GD<br />
 							</small></p>
 	          </div>
+            <div class="footer-social">
+              <p>
+                <a href="https://www.facebook.com/DecaCoder/" target="_blank">
+                  <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+                </a>
+                <a href="https://twitter.com/BeADecaCoder" target="_blank">
+                  <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+                </a>
+              </p>
+            </div>
 	        </div>
       	</div>
     	</div>
@@ -155,7 +139,7 @@
 		<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js?ver=1"></script>
 	<![endif]-->
 	<!--[if (gte IE 9) | (!IE)]><!-->
-		<script type="text/javascript" src="assets/js/jquery-2.1.4.min.js?ver=1"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 	<!--<![endif]-->
 
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>

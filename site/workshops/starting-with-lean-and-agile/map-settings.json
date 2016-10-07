@@ -1,0 +1,11 @@
+{
+	"mapZoom": 15,
+	"markerAddress": "Hauser Forum, 3 Charles Babbage Road, Cambridge CB3 0GT",
+	"markerImagePath": "/assets/img/marker-21x32.png",
+	"offsetX": 100,
+	"offsetY": 10,
+	"markerLatLng": [
+		52.209429,
+		0.090411
+	]
+}

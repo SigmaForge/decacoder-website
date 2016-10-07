@@ -20,19 +20,23 @@
 }
 
 
-.footer{
+.footer {
   background-color: #2b3643;
 }
-
-.decacoder{
-  font-family: PFDinStencil-Thin, Arial, Helvetica, san-serif;
-  font-weight: normal;
-  font-size: 26px;
+.footer-nav {
+  float: left;
+  color: #aebdc1;
 }
-.footer-about{
+.footer-social {
+  float: right;
+}
+.footer-social a {
+  margin-right: 10px;
+}
+.footer-about {
   padding-bottom:30px;
 }
-.footer{
+.footer {
   margin-top:50px
 }
 
@@ -41,7 +45,7 @@
   bottom: -6px;
   box-shadow: inset 0px 5px 6px -3px rgba(0, 0, 0, 0.4);
   position: fixed;
-  top: 78px;
+  top: 92px;
   left: 0;
   right: 0;
   height: 6px;
@@ -52,25 +56,36 @@
   z-index: 998;
 }
 
+@media (min-width: 768px) {
+  #dropShadow {
+    top: 78px;
+  }
+}
+
 .workshop-book {
   margin:32px;
 }
 .workshop-description {
   background-color: #ffffff;
-  padding: 64px 32px;
+  padding: 32px 32px;
   font-size:large;
 }
+.workshop-description ul > li{
+  padding-left:20px;
+  list-style: circle;
+  list-style-position: inside;
+}
+.workshop-description ol > li{
+  padding-left:20px;
+  list-style: decimal;
+  list-style-position: inside;
+}
+
 
 .nav.nav-schedule li.active {
   background: #5F7895;
 }
-.tickets-section .workshop-description {
-  background: #DCE1E5;
-}
 
-section.tickets-section {
-  /*padding: 0;*/
-}
 .nav.nav-schedule li a {
   padding: 15px;
 }
@@ -145,6 +160,18 @@ button, .btn {
   margin-top:30px;
 }
 
+.course-bg p,
+.workshop-bg p {
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.box-shadow-bg {
+  -webkit-box-shadow:0 0 10px rgba(16, 20, 25, 0.2);
+  -moz-box-shadow:0 0 10px rgba(16, 20, 25, 0.2);
+  box-shadow:0 0 10px rgba(16, 20, 25, 0.2);
+}
+
 h4 {
   font-weight: 100;
   letter-spacing: 0;
@@ -156,21 +183,22 @@ h4 {
   margin: 10px 5px;
 }
 
-.cta-buttons{
+.cta-buttons {
   margin: 0px auto;
   text-align: center;
   width: 220px;
 }
 
-.cta-buttons button{
+.cta-buttons a {
   text-align: center;
+  margin: 15px;
 }
 
 .who-are-we {
-  background: #384657;
+  background: #2b3643;
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
   padding-top: 20px;
   margin-top: 30px;
 }
@@ -198,23 +226,89 @@ h5 {
   font-weight: 100;
 }
 
-.footer-nav p {
-  color: #ECEFF1;
-}
-
 .description p {
   font-size:1.5em;
   line-height: 1.5em;
   letter-spacing: 0.01em;
 }
 
+#navigation {
+  padding-left: 50px;
+}
+
 .navigation-header .logo {
   padding: 0;
+  max-width: 190px;
 }
 
 .navbar-toggle {
   margin-top: 6px;
 }
+
+.embed-logo{
+  height:0.8em;
+}
+.about-widget img {
+  width: 100px;
+  margin: 0;
+}
+
+.workshop-tile-left {
+  width: 45%;
+}
+.workshop-tile:nth-child(2nd) {clear: both;}
+.workshop-tile-right {
+  float: right;
+  width: 45%;
+}
+
+p.big-text{
+  font-size:1.5em;
+  line-height: 1.5em;
+  margin-top:20px
+}
+.tickets {
+  padding:30px;
+  margin-top:50px;
+  background: #DCE1E5;
+  border-radius: 5px;
+}
+
+b, strong {
+  letter-spacing: 0.01em;
+}
+
+.header-wrapper .buy-btn:hover {
+  background: #39c8b7;
+  border-color: #39c8b7;
+}
+
+.header-title .text-alt {
+  margin-bottom: 18px;
+}
+.header-title h3 {
+  margin-bottom: 3px;
+}
+.workshop-tile a:hover,
+.workshop-tile a {
+  text-decoration: none;
+  color: inherit;
+}
+.footer-about {
+  padding-top: 36px;
+}
+.footer-about p,
+h6.widget-head {
+  font-size: 20px;
+  line-height: 1.6em;
+  color: #ffffff;
+  font-weight: 200;
+}
+.embed-logo {
+  margin-left: 3px;
+  margin-bottom: -0.02em;
+}
+
 /*Small tablets and up*/
 
 @media (min-width: 480px) {
@@ -222,8 +316,12 @@ h5 {
     padding-top: 70px;
     min-height: 405px;
   }
+  .navigation-header .logo {
+    width: 190px;
+  }
 }
 /*iPAD and up*/
+
 @media (min-width: 767px) {
 
   .what-we-do {
@@ -237,16 +335,17 @@ h5 {
 
   .who-are-we {
     margin-top: 60px;
-    padding-bottom: 76px;
+    padding-bottom: 20px;
     padding-top: 30px;
   }
 
   .who-are-we h3 {
+    font-size: 40px;
     margin-bottom: 22px;
   }
 
   .who-are-we p {
-    font-size: 27px;
+    font-size: 20px;
     line-height: 35px;
   }
 
@@ -254,10 +353,27 @@ h5 {
     width: 100%;
   }
 
+  .navigation-header .logo {
+    width: 190px;
+  }
+
+  #dropShadow {
+    top: 78px;
+  }
+
+  .header-title .text-alt {
+    margin-bottom: 36px;
+  }
+
+  .header-title h3 {
+    margin-bottom: 6px;
+  }
 }
 /*Desktop*/
 @media (min-width: 991px) {
-
+  .section {
+    padding-top: 50px;
+  }
 
 }
 @media (max-height: 375px) {
@@ -267,6 +383,12 @@ h5 {
   }
 }
 
-.embed-logo{
-  height:0.8em;
+@media (max-width: 767px){
+  #navigation.navbar-collapse{
+    padding-left:0px;
+    background: #202832;
+  }
+  .navigation-link:not(.active):not(:hover):not(:focus):not(:active) {
+    color: #ffffff;
+  }
 }
