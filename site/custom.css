@@ -81,7 +81,9 @@
   list-style-position: inside;
 }
 
-
+.workshop-description h2,h3,h4{
+  letter-spacing: -0.01em;
+}
 .nav.nav-schedule li.active {
   background: #5F7895;
 }
