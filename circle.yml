@@ -1,0 +1,11 @@
+test:
+  override:
+    - echo "Always Pass"
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - aws s3 sync ./site s3://www-decacoder-com/
+      - tar -C site -czf CIRCLE-${CIRCLE_BUILD_NUM}-website-$(git rev-parse --short HEAD).tgz ./
+      - aws s3 cp CIRCLE-${CIRCLE_BUILD_NUM}-website-$(git rev-parse --short HEAD).tgz s3://decacoder-artefacts/website/
