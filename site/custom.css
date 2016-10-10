@@ -398,3 +398,7 @@ h6.widget-head {
     color: #ffffff;
   }
 }
+
+.navigation-item.active a {
+  color: #39c8b7!important;
+}
