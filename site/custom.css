@@ -397,6 +397,9 @@ h6.widget-head {
   .navigation-link:not(.active):not(:hover):not(:focus):not(:active) {
     color: #ffffff;
   }
+  .cropper {
+    display: none;
+  }
 }
 
 .navigation-item.active a {
