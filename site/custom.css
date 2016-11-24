@@ -405,3 +405,11 @@ h6.widget-head {
 .navigation-item.active a {
   color: #39c8b7!important;
 }
+
+#privacy-policy p,li{
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+#privacy-policy li{
+  margin-left:3em;
+}
